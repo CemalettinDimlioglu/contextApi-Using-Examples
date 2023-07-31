@@ -34,7 +34,7 @@ function Navs() {
               People
             </Link>
 
-            {user.email ? (
+            {user?.email ? (
               <Link
                 className="nav-link"
                 to="/login"
