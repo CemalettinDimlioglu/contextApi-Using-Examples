@@ -10,7 +10,7 @@ const PrivateRouter = () => {
   const { user}= useContext(LoginContext)
 
 
-  return user ? <Outlet /> : <Navigate to="/login" />;
+  return user.email ? <Outlet /> : <Navigate to="/login" />;
 };
 
 export default PrivateRouter;
